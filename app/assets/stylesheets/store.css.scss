@@ -2,15 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* START_HIGHLIGHT */
 .store {
   h1 {
     margin: 0;
-    padding-bottom: 0.53m;
-    font: 150% sans-serif;
+    padding-bottom: 0.5em;
+    font:  150% sans-serif;
     color: #226;
     border-bottom: 3px dotted #77d;
   }
 
+  /* An entry in the store catalog */
   .entry {
     overflow: auto;
     margin-top: 1em;
@@ -26,18 +28,26 @@
 
     h3 {
       font-size: 120%;
-      font-family:  sans-serif;
+      font-family: sans-serif;
       margin-left: 100px;
       margin-top: 0;
       margin-bottom: 2px;
       color: #227;
     }
 
+//#START:inline
     p, div.price_line {
       margin-left: 100px;
       margin-top: 0.5em;
       margin-bottom: 0.8em;
+
+      /* START_HIGHLIGHT */
+      form, div {
+        display: inline;
+      }
+      /* END_HIGHLIGHT */
     }
+//#END:inline
 
     .price {
       color: #44a;
@@ -46,3 +56,4 @@
     }
   }
 }
+/* END_HIGHLIGHT */
